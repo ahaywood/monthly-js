@@ -1,8 +1,13 @@
 ---
-import SingupForm from '../components/SingupForm.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import SignupForm from '../components/SignupForm.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Monthly JS _ 1 FREE JavaScript Challenge Each Month">
-	<SingupForm />
+	<SignupForm />
+	<div class="text-center w-full absolute bottom-6"><img src="/images/arrow.svg" alt="Down Arrow" class="mx-auto" /></div>
+	<SectionHeading title="How It Works" />
+	<SectionHeading title="Frequently Asked Questions" />
+
 </Layout>

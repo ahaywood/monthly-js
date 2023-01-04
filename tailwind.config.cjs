@@ -5,6 +5,7 @@ module.exports = {
 		extend: {
 			colors: {
 				'chicago': '#5b5b5b',
+				'eerieBlack': '#1d1d1d',
 				'hotMagenta': '#ff00dc',
 			},
 			letterSpacing: {

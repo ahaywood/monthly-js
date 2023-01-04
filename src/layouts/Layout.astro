@@ -37,8 +37,10 @@ const getCurrentMonth = () => {
 
 			<div class="font-wide text-hotMagenta uppercase text-2xl tracking-widening mb-5">Monthly Javascript</div>
 
-			<div>2023</div>
-			<div>{getCurrentMonth()}</div>
+			<div class="relative text-center mb-16">
+				<div class="font-wide text-[425px] text-eerieBlack leading-none">2023</div>
+				<div class="absolute left-0 top-1/2 right-0 text-[100px] leading-none -translate-y-1/2 text-white font-wide uppercase">{getCurrentMonth()}</div>
+			</div>
 		</header>
 		<slot />
 		<Footer />
