@@ -3,5 +3,8 @@
     "activityBar.background": "#000000",
     "titleBar.activeBackground": "#FF00D6",
     "titleBar.activeForeground": "#FDFAF6"
-  }
+  },
+  "cSpell.words": [
+    "Roboto"
+  ]
 }

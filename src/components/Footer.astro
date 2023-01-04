@@ -1,0 +1,23 @@
+---
+const getCurrentYear = () => {
+  const date = new Date();
+  return date.getFullYear();
+}
+---
+
+<div class="pb-5 px-14 uppercase font-wide text-chicago flex justify-between">
+  <div>
+    Copyright &copy; {getCurrentYear()}. <a href="https://ahhacreative.com" rel="noopener noreferrer" target="_blank">Ah Ha Creative, LLC</a>. All rights reserved.
+  </div>
+  <div>
+    <a href="/privacy-policy">Privacy Policy</a> _
+    <a href="/terms-and-conditions">Terms and Conditions</a> _
+    <a href="/disclaimers">Disclaimers</a>
+  </div>
+</div>
+
+<style>
+  a {
+    @apply hover:text-hotMagenta hover:underline;
+  }
+</style>

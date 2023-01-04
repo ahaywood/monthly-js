@@ -2,7 +2,19 @@
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				'chicago': '#5b5b5b',
+				'hotMagenta': '#ff00dc',
+			},
+			letterSpacing: {
+				'widening': '0.2em'
+			}
+		},
+		fontFamily: {
+			sans: ['Roboto', 'sans-serif'],
+			wide: ['Krona One', 'sans-serif'],
+		}
 	},
 	plugins: [],
 }
