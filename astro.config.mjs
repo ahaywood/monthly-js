@@ -1,10 +1,11 @@
 import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
-import netlify from "@astrojs/netlify/functions";
+import vercel from "@astrojs/vercel/serverless";
 
+// https://astro.build/config
 export default defineConfig({
   experimental: {
-    contentCollections: true,
+    contentCollections: true
   },
   integrations: [tailwind({
     // Example: Disable injecting a basic `base.css` import on every page.
@@ -14,5 +15,5 @@ export default defineConfig({
     }
   })],
   output: "server",
-  adapter: netlify()
+  adapter: vercel()
 });
