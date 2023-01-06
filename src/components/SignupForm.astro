@@ -1,4 +1,7 @@
-<form name="register" method="POST" data-netlify="true" class="page w-full flex gap-x-10 pb-[340px]" netlify>
+---
+---
+
+<form name="register" method="POST" data-netlify="true" class="page w-full flex gap-x-10 pb-[340px]" netlify netlify-honeypot action="/success">
   <input type="hidden" name="form-name" value="Register">
 
   <div class="field">
@@ -11,31 +14,16 @@
     <input type="text" name="email" id="email" required />
   </div>
 
+  <p class="hidden">
+    <label>
+      Don’t fill this out if you’re human: <input name="bot-field" />
+    </label>
+  </p>
+
   <div class="field flex items-end">
     <button type="submit" class="mt-auto w-full border-2 border-white hover:border-hotMagenta hover:bg-hotMagenta h-16 font-wide uppercase tracking-widening">Sign me up for <span class="text-hotMagenta">FREE</span></button>
   </div>
 </form>
-
-<script is:inline>
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const myForm = event.target;
-    const formData = new FormData(myForm);
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => console.log("Form successfully submitted"))
-      .catch((error) => alert(error));
-  };
-
-  document
-    .querySelector("form")
-    .addEventListener("submit", handleSubmit);
-</script>
 
 <style>
   .field {
