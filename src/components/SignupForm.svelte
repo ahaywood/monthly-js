@@ -10,7 +10,7 @@
 <form
   name="register"
   method="POST"
-  class="kwes-form page w-full flex gap-x-10 pb-[340px]"
+  class="kwes-form page w-full grid grid-cols-3 gap-x-10 pb-[340px]"
   action="https://kwesforms.com/api/foreign/forms/eVMJuWO6ocifIXGctq4x"
 >
   <input type="hidden" name="form-name" value="Register" />
@@ -53,6 +53,10 @@
 </form>
 
 <style lang="postcss">
+  :global(.kw-alert) {
+    grid-column: span 3;
+  }
+
   .field {
     @apply flex-1;
   }
