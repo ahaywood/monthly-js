@@ -5,6 +5,8 @@
     "titleBar.activeForeground": "#FDFAF6"
   },
   "cSpell.words": [
+    "monthlyjs",
     "Roboto"
-  ]
+  ],
+  "files.associations": { "*.mdx": "markdown", "*.svx": "markdown" },
 }

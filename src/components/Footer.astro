@@ -5,11 +5,11 @@ const getCurrentYear = () => {
 }
 ---
 
-<div class="page pb-5 text-xs uppercase font-wide text-chicago flex justify-between">
-  <div>
+<div class="page pb-5 text-xs uppercase font-wide text-chicago flex flex-col-reverse lg:flex-row gap-y-5 justify-between">
+  <div class="text-center lg:text-left">
     Copyright &copy; {getCurrentYear()}. <a href="https://ahhacreative.com" rel="noopener noreferrer" target="_blank">Ah Ha Creative, LLC</a>. All rights reserved.
   </div>
-  <div>
+  <div class="text-center lg:text-right">
     <a href="/privacy-policy">Privacy Policy</a> _
     <a href="/terms-and-conditions">Terms and Conditions</a> _
     <a href="/disclaimers">Disclaimers</a>

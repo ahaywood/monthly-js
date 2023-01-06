@@ -8,6 +8,22 @@
   html {
     @apply p-0 m-0 bg-black text-white font-sans;
   }
+
+  p {
+    @apply mb-5
+  }
+
+  ul {
+    @apply pl-10 list-disc mb-5
+  }
+
+  ul li {
+    @apply mb-3
+  }
+
+  a {
+    @apply underline hover:text-hotMagenta font-bold;
+  }
 }
 
 @layer components { }
@@ -18,6 +34,6 @@
   }
 
   .page {
-    @apply px-14;
+    @apply px-5 md:px-14;
   }
 }
