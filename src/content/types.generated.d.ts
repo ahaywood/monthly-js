@@ -48,21 +48,21 @@ declare module 'astro:content' {
   slug: "01__good",
   body: string,
   collection: "details",
-  data: any
+  data: InferEntrySchema<"details">
 },
 "02__who.md": {
   id: "02__who.md",
   slug: "02__who",
   body: string,
   collection: "details",
-  data: any
+  data: InferEntrySchema<"details">
 },
 "03__you.md": {
   id: "03__you.md",
   slug: "03__you",
   body: string,
   collection: "details",
-  data: any
+  data: InferEntrySchema<"details">
 },
 },
 "faqs": {
@@ -71,88 +71,88 @@ declare module 'astro:content' {
   slug: "01__expire",
   body: string,
   collection: "faqs",
-  data: any
+  data: InferEntrySchema<"faqs">
 },
 "02__welcome-email.md": {
   id: "02__welcome-email.md",
   slug: "02__welcome-email",
   body: string,
   collection: "faqs",
-  data: any
+  data: InferEntrySchema<"faqs">
 },
 "03__question.md": {
   id: "03__question.md",
   slug: "03__question",
   body: string,
   collection: "faqs",
-  data: any
+  data: InferEntrySchema<"faqs">
 },
 "04__stream.md": {
   id: "04__stream.md",
   slug: "04__stream",
   body: string,
   collection: "faqs",
-  data: any
+  data: InferEntrySchema<"faqs">
 },
 "05__theme.md": {
   id: "05__theme.md",
   slug: "05__theme",
   body: string,
   collection: "faqs",
-  data: any
+  data: InferEntrySchema<"faqs">
 },
 "06__typo.md": {
   id: "06__typo.md",
   slug: "06__typo",
   body: string,
   collection: "faqs",
-  data: any
+  data: InferEntrySchema<"faqs">
 },
 "07__github.md": {
   id: "07__github.md",
   slug: "07__github",
   body: string,
   collection: "faqs",
-  data: any
+  data: InferEntrySchema<"faqs">
 },
 "08__redistribute.md": {
   id: "08__redistribute.md",
   slug: "08__redistribute",
   body: string,
   collection: "faqs",
-  data: any
+  data: InferEntrySchema<"faqs">
 },
 "09__tools.md": {
   id: "09__tools.md",
   slug: "09__tools",
   body: string,
   collection: "faqs",
-  data: any
+  data: InferEntrySchema<"faqs">
 },
 "10__hate.md": {
   id: "10__hate.md",
   slug: "10__hate",
   body: string,
   collection: "faqs",
-  data: any
+  data: InferEntrySchema<"faqs">
 },
 "11__courses.md": {
   id: "11__courses.md",
   slug: "11__courses",
   body: string,
   collection: "faqs",
-  data: any
+  data: InferEntrySchema<"faqs">
 },
 "12__format.md": {
   id: "12__format.md",
   slug: "12__format",
   body: string,
   collection: "faqs",
-  data: any
+  data: InferEntrySchema<"faqs">
 },
 },
 
 	};
 
-	type ContentConfig = never;
+	type ContentConfig = typeof import("./config");
 }
